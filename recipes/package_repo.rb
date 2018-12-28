@@ -33,8 +33,8 @@ when "rhel"
 
   yum_repository "percona" do
     description "Percona Packages"
-    baseurl "http://repo.percona.com/centos/#{pversion}/os/#{arch}/"
-    gpgkey "http://www.percona.com/downloads/RPM-GPG-KEY-percona"
+    baseurl "https://repo.percona.com/centos/#{pversion}/os/#{arch}/"
+    gpgkey "https://www.percona.com/downloads/RPM-GPG-KEY-percona"
     action :create
   end
 end
